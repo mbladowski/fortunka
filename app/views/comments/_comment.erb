@@ -1,0 +1,14 @@
+<p>
+    <div class="comments">
+   Autor: <b><%= comment.user.name %></b> at <i><%=comment.created_at %></i><br/>
+
+     <p class="commentc"><%= comment.body %></p>
+
+
+     <% if(current_user && current_user.id == comment.user.id) %>
+        <p>
+        <%= link_to "Delete", [@fortune, comment], confirm: "Are you sure?", :method => :delete %>
+        </p>
+     <% end %>
+     </div>
+ </p>

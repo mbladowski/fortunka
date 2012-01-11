@@ -1,0 +1,16 @@
+en:
+  flash:
+    fortunes:
+      create:
+        notice: '%{resource_name} was added.'
+      update:
+        notice: '%{resource_name} was changed.'
+      destroy:
+        notice: '%{resource_name} was removed.'
+    comments:
+      create:
+        notice: '%{resource_name} was added.'
+      update:
+        notice: '%{resource_name} was changed.'
+      destroy:
+        notice: '%{resource_name} was removed.'

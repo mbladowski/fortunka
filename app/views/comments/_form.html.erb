@@ -1,0 +1,7 @@
+<div style="display:block;" >
+  <%= simple_form_for [@fortune,@comment] do |f| %>
+        <%= f.input :body, :input_html => {:rows => 4, :cols => 40}, :required => true %>
+        <%= f.button :submit %>
+    <% end %>
+&nbsp;
+</div>

@@ -1,0 +1,30 @@
+<% title "Show fortune" %>
+
+
+<article class="single">
+  <div class="attribute">
+    <span class="name">Source</span>
+    <span class="value"><%= @fortune.source %></span>
+  </div>
+  <div class="attribute">
+    <span class="name">Body</span>
+    <span class="value"><%= @fortune.body %></span>
+  </div>
+  <div class="link">
+    <% if(current_user) %>
+        <%= link_to 'Edit', edit_fortune_path(@fortune) %> |
+    <% end %>
+    <%= link_to 'Back', fortunes_path %>
+  </div>
+  <% if @fortune.comments.any? %>
+  <h2>Comments</h2>
+   <%= render :partial => 'comments/comment', :collection => @fortune.comments %>
+  <% end %>
+  <% if(current_user) %>
+    <h2>Add new comment</h2>
+    <%= render :partial => 'comments/form' %>
+  <% else %>
+    To comment sign in with <%= link_to " Github", "/auth/github" %> or <%= link_to " Twitter", "/auth/twitter" %>
+  <% end %>
+
+</article>

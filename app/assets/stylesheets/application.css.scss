@@ -1,0 +1,80 @@
+/*
+ *= require_self
+ */
+@import "bourbon";
+@import "preamble.css.scss";
+@import "simple-scaffold.css.scss";
+@import "layout.css.scss";
+@import "postamble.css.scss";
+nav.pagination {
+  display: block;
+  margin: 2em 0;
+}
+nav.pagination a, nav.pagination .page.current {
+  padding: 4px;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav.pagination .page.current {
+  color: blue;
+}
+input[type="text"], textarea {
+  font: inherit;
+}
+div.input, input, textarea, label {
+  float: left;
+}
+div.input {
+  width: 100%;
+}
+.auth {
+text-align:left;
+
+}
+
+a:visited{
+color: #3366CC;
+}
+a:link{
+color: #3366CC;
+}
+#notice, #alert {
+  padding: 5px 8px;
+  margin: 10px 0;
+  display: inline;
+}
+#notice {
+  background-color: #9966CC;
+  border: solid 1px #000000;
+}
+#alert {
+  background-color: #009933;
+  border: solid 1px #9966CC;
+}
+#random {
+    background-color: #3366CC;
+    color: #000000;
+    left: 10px;
+    float: right;
+    top: 10px;
+    padding:5px;
+	border-radius: 5px;
+    font-size: 11pt;
+    width: 220px;
+}
+#r-source{
+    text-align: right;
+    font-size: 8pt;
+    font-style: italic;
+}
+.comments{
+border: 1px solid #333399;
+padding-left: 5px;
+padding-right: 5px;
+border-radius: 4px;
+}
+.commentc{
+background-color: #FF9933;
+padding: 5px;
+border-radius: 5px;
+}

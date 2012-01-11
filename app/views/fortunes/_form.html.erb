@@ -1,0 +1,6 @@
+<%= simple_form_for @fortune do |f| %>
+  <%= f.input :source, :input_html => {:size => 40}, :required => false %>
+  <%= f.input :body, :input_html => {:rows => 4, :cols => 40} %>
+  <%= f.button :submit %>
+<% end %>
+<br/><br/>
